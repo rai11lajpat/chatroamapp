@@ -11,11 +11,13 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 public class Config implements WebSocketMessageBrokerConfigurer{
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
-        registry.enableSimpleBroker("/topic");
+        registry.enableSimpleBroker("/topic","/specific");
         registry.setApplicationDestinationPrefixes("/app");
 
         //send message      /app/message    {messag json}
-        //to suscribe so that we can recieve messages /topic/return-to
+        //to suscribe so that we can recieve messages=> /topic/return-to
+
+        
     }
 
     @Override
