@@ -1,3 +1,24 @@
 #name-form{
     height: 100vh;
 }
+#main{
+    background-color: gray;
+}
+
+#footer{
+    background-color: rgb(181, 180, 180);
+}
+#footer:hover{
+    background-color: rgb(116, 116, 116);
+}
+
+#mess{
+    background-color: rgb(46, 46, 234);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 8ch;
+    color: white;
+    border-radius: 5px;
+}

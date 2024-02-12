@@ -30,11 +30,11 @@ public class MessageController {
     }
 
     //Mapped as /app/private
-    @MessageMapping ("/private-message")
-    public MessPrivate sendToSpecfic(@Payload MessPrivate message){
+    // @MessageMapping ("/private-message")
+    // public MessPrivate sendToSpecfic(@Payload MessPrivate message){
 
-       simpMessagingTemplate.convertAndSendToUser(
-        message.getTo(), "/private", message);  // /user/Demo/private
-        return message;
-    }
+    //    simpMessagingTemplate.convertAndSendToUser(
+    //     message.getTo(), "/private", message);  // /user/Demo/private
+    //     return message;
+    // }
 }

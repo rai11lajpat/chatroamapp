@@ -43,7 +43,19 @@ function showUser(name){
 }
 function showMessage(message) {
     
-    $("#message-container-table").prepend(`<tr><td><b>${message.name}:</b>${message.content}</td></tr>`)
+    $("#message-container-table").prepend(`
+                                            <tr>
+                                                <td><img src="/imgs/icon.png" class="rounded">
+                                                    <b>${message.name}</b><br>
+                                                    <div id="mess">
+                                                    ${message.content}
+                                                    <div>
+                                                </td>
+                                                <br><br>
+                                            </tr>
+                                            
+                                            
+                                            `)
 }
 function sendMessage() {
     

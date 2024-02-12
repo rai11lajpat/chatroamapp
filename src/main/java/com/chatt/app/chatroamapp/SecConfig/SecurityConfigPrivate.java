@@ -1,20 +1,20 @@
-package com.chatt.app.chatroamapp.SecConfig;
+// package com.chatt.app.chatroamapp.SecConfig;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+// import org.springframework.context.annotation.Bean;
+// import org.springframework.security.core.userdetails.User;
+// import org.springframework.security.core.userdetails.UserDetails;
+// import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
-public class SecurityConfigPrivate {
+// public class SecurityConfigPrivate {
     
-    @Bean
-    public InMemoryUserDetailsManager userDetailsService(){
-        UserDetails user=User.withDefaultPasswordEncoder()
-        .username("laju")
-        .password("null")
-        .roles("USER")
-        .build();
+//     @Bean
+//     public InMemoryUserDetailsManager userDetailsService(){
+//         UserDetails user=User.withDefaultPasswordEncoder()
+//         .username("laju")
+//         .password("laju")
+//         .roles("USER")
+//         .build();
 
-        return new InMemoryUserDetailsManager(user);
-    }
-}
+//         return new InMemoryUserDetailsManager(user);
+//     }
+// }
