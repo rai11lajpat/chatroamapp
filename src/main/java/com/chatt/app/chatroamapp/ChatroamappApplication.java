@@ -8,7 +8,7 @@ public class ChatroamappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ChatroamappApplication.class, args);
-		System.out.println("server run...");
+		System.out.println("Server Started...");
 	}
 
 }
